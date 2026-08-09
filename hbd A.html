@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Surprise birthday website bertema pastel purple, lavender garden, cake, flowers, music, and confetti.">
+  <title>Happy Birthday 🪻</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="petals" aria-hidden="true"></div>
+  <div id="confetti" aria-hidden="true"></div>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <div class="intro" id="intro">
+    <div class="stars"></div>
+    <div class="intro-card">
+      <div class="tiny-flower">🌸</div>
+      <p class="eyebrow">A little surprise for you</p>
+      <h1>Happy Birthday <span>🪻</span></h1>
+      <p class="intro-sub">Untuk teman mabar genshin yang udah jarang mabar wkwkw</p>
+      <button class="primary-btn" id="openBtn">Buka Kejutan ✨</button>
+      <p class="hint">tap to enter your birthday garden</p>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a class="logo" href="#home">🪻 Birthday</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#cake">Cake</a>
+      <a href="#message">Message</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">today is your special day ✨</p>
+        <h2>Happy Birthday,<br><span id="nameDisplay">Nama</span>! 🪻</h2>
+        <p>Semoga hari ini penuh tawa, kebahagiaan, bunga, dan hal-hal kecil yang bikin kamu tersenyum.</p>
+        <a class="secondary-btn" href="#cake">Lihat Kejutannya ↓</a>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="moon"></div>
+        <div class="cloud cloud-a"></div>
+        <div class="cloud cloud-b"></div>
+        <div class="cake-scene">
+          <div class="cake">
+            <div class="candle candle-1"><span class="flame"></span></div>
+            <div class="candle candle-2"><span class="flame"></span></div>
+            <div class="candle candle-3"><span class="flame"></span></div>
+            <div class="cake-top"></div>
+            <div class="icing icing-top"></div>
+            <div class="cake-layer layer-top"><span>✦</span><span>🪻</span><span>✦</span></div>
+            <div class="icing icing-mid"></div>
+            <div class="cake-layer layer-mid"></div>
+            <div class="icing icing-bottom"></div>
+            <div class="cake-layer layer-bottom"><span>✿</span><span>🪻</span><span>✿</span></div>
+            <div class="plate"></div>
+          </div>
+        </div>
+        <div class="garden-flower flower-left">🌷</div>
+        <div class="garden-flower flower-right">🌸</div>
+      </div>
+    </section>
+
+    <section class="section garden-section" id="cake">
+      <div class="section-heading reveal">
+        <p class="eyebrow">make a wish</p>
+        <h2>Time to Blow the Candles 🎂</h2>
+        <p>Pejamkan mata, buat satu harapan, lalu tekan tombolnya.</p>
+      </div>
+      <div class="cake-card reveal">
+        <div class="big-cake-wrap">
+          <div class="big-cake">
+            <div class="big-candle c1"><span class="flame"></span></div>
+            <div class="big-candle c2"><span class="flame"></span></div>
+            <div class="big-candle c3"><span class="flame"></span></div>
+            <div class="frosting f1"></div>
+            <div class="tier t1"><i>🪻</i><i>✦</i><i>🪻</i></div>
+            <div class="frosting f2"></div>
+            <div class="tier t2"></div>
+            <div class="frosting f3"></div>
+            <div class="tier t3"><i>✿</i><i>🪻</i><i>✿</i></div>
+            <div class="cake-plate"></div>
+          </div>
+        </div>
+        <div class="cake-actions">
+          <button class="primary-btn" id="blowBtn">Tiup Lilin 🕯️</button>
+          <p id="wishText" class="wish hidden">Make a Wish! ✨</p>
+          <p id="wishHint">Klik setelah membuat harapan kecil🪻</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section message-section" id="message">
+      <div class="message-card reveal">
+        <div class="envelope">💌</div>
+        <p class="eyebrow">a little birthday message</p>
+        <h2>For You</h2>
+        
+        <!-- Masker SVG Presisi -->
+        <svg width="0" height="0" style="position:absolute;">
+          <defs>
+            <clipPath id="starClip" clipPathUnits="objectBoundingBox">
+              <polygon points="0.50 0.02, 0.63 0.33, 0.98 0.35, 0.70 0.57, 0.79 0.93, 0.50 0.72, 0.21 0.93, 0.30 0.57, 0.02 0.35, 0.37 0.33" />
+            </clipPath>
+            <clipPath id="heartClip" clipPathUnits="objectBoundingBox">
+              <path d="M 0.5,0.92 C 0.5,0.92 0.04,0.63 0.04,0.33 A 0.23,0.23 0 0,1 0.5,0.21 A 0.23,0.23 0 0,1 0.96,0.33 C 0.96,0.63 0.5,0.92 0.5,0.92 Z" />
+            </clipPath>
+          </defs>
+        </svg>
+
+        <!-- Layout Pesan dengan 2 BINGKAI FOTO (Bintang & Hati) -->
+        <div class="message-content-wrapper">
+          
+          <!-- Bingkai Foto Bintang (Kiri) -->
+          <div class="frame-left-heart">
+            <div class="photo-container">
+              <div class="photo-frame frame-star">
+                <img src="A2.png" alt="Foto Bintang">
+              </div>
+              <svg class="sketch-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="50,2 63,33 98,35 70,57 79,93 50,72 21,93 30,57 2,35 37,33" class="sketch-line line-1" />
+                <polygon points="50,4 61,35 96,33 68,58 81,91 50,70 19,91 32,58 4,33 39,35" class="sketch-line line-2" />
+                <polygon points="49,1 64,32 99,36 71,56 78,94 51,73 22,92 29,56 1,36 36,32" class="sketch-line line-3" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Teks Ucapan (Tengah) -->
+          <div class="typing-box">
+            <p id="typedMessage"></p><span class="cursor">|</span>
+          </div>
+
+          <!-- Bingkai Foto Hati (Kanan) -->
+          <div class="frame-right">
+            <div class="photo-container">
+              <div class="photo-frame frame-heart">
+                <img src="A (2).png" alt="Foto Hati">
+              </div>
+              <svg class="sketch-border" viewBox="0 0 120 120">
+                <path d="M 60,110 C 60,110 5,75 5,40 A 27.5,27.5 0 0,1 60,25 A 27.5,27.5 0 0,1 115,40 C 115,75 60,110 60,110 Z" class="sketch-line line-1" />
+                <path d="M 60,108 C 58,107 7,73 7,39 A 26,26 0 0,1 60,27 A 26,26 0 0,1 113,39 C 113,73 62,107 60,108 Z" class="sketch-line line-2" />
+                <path d="M 60,112 C 62,112 3,77 3,41 A 28,28 0 0,1 60,23 A 28,28 0 0,1 117,41 C 117,77 58,112 60,112 Z" class="sketch-line line-3" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="text-btn" id="retypeBtn">Baca Lagi ↻</button>
+      </div>
+    </section>
+
+    <section class="final-section" id="surprise">
+      <div class="final-content reveal">
+        <p class="eyebrow">one more thing...</p>
+        <h2>Ready for one last surprise? 🪻</h2>
+        <button class="primary-btn" id="surpriseBtn">Click Me ✨</button>
+        
+        <div id="finalMessage" class="final-message hidden">
+          <!-- Bingkai Foto Landscape Tambahan -->
+          <div class="final-photo-container">
+            <div class="final-photo-frame">
+              <img src="sapu.jpeg" alt="ratu sapu sapuu">
+            </div>
+          </div>
+
+          <div class="final-heart">🪻</div>
+          <h3>Happy Birthday!</h3>
+          <p>You deserve all the happiness in the world. ✨</p>
+          <small>Never stop smiling.</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Nav Controls -->
+  <button class="scroll-btn scroll-top-btn" id="scrollTopBtn" aria-label="Kembali ke atas">↑</button>
+  <button class="scroll-btn scroll-down-btn" id="scrollDownBtn" aria-label="Scroll ke bawah">↓</button>
+
+  <button class="music-btn" id="musicBtn" aria-label="Putar musik">🎵</button>
+  
+  <audio id="birthdayAudio" loop preload="none">
+    <source src="lagu ulang tahun versi korea.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Canvas Kembang Api -->
+  <canvas id="fireworksCanvas" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:99;"></canvas>
+
+  <footer>
+    <p>Made with just for youu.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
